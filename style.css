@@ -1,0 +1,137 @@
+{ margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: Arial, sans-serif; color: #222; background: #fff; }
+/* NAVBAR */
+header { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;
+background: rgba(255, 255, 255, 0.95);
+border-bottom: 1px solid #eee;
+}
+.navbar { max-width: 1200px; margin: auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+padding: 20px;
+}
+.logo { font-size: 24px; font-weight: bold; }
+.nav-links { display: flex; gap: 30px; }
+.nav-links a { text-decoration: none; color: #222; font-size: 15px; }
+/* HERO */
+.hero { min-height: 100vh;
+display: flex;
+align-items: center;
+
+background:
+    linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    ),
+    url("https://qhzoxdhfrwvhjcaarfis.supabase.co/storage/v1/object/public/property-images/property1.jpg");
+
+background-size: cover;
+background-position: center;
+
+color: white;
+}
+.hero-content { max-width: 800px; margin-left: 10%;
+padding-top: 80px;
+}
+.small-title { font-size: 13px; letter-spacing: 3px; font-weight: bold;
+margin-bottom: 15px;
+}
+.hero h1 { font-size: clamp(45px, 7vw, 80px); line-height: 1;
+margin-bottom: 25px;
+}
+.hero p:not(.small-title) { font-size: 19px; max-width: 550px; line-height: 1.6;
+margin-bottom: 30px;
+}
+/* BUTTON */
+.button { display: inline-block;
+background: white;
+color: #111;
+
+padding: 14px 25px;
+
+text-decoration: none;
+font-weight: bold;
+
+border-radius: 5px;
+}
+.secondary-button { background: transparent; color: white;
+border: 1px solid white;
+}
+/* SECTIONS */
+.section { max-width: 1200px; margin: auto;
+padding: 110px 20px;
+}
+.section-heading { max-width: 700px; margin-bottom: 50px; }
+.section-heading h2 { font-size: 42px; margin-bottom: 20px; }
+.section-heading p { line-height: 1.7; color: #666; }
+/* PROPERTY CARDS */
+.property-grid { display: grid;
+grid-template-columns:
+    repeat(auto-fit, minmax(280px, 1fr));
+
+gap: 30px;
+}
+.property-card { border: 1px solid #eee; background: white;
+overflow: hidden;
+
+border-radius: 8px;
+}
+.property-card img { width: 100%; height: 250px;
+object-fit: cover;
+}
+.property-info { padding: 25px; }
+.property-info h3 { font-size: 24px; margin-bottom: 10px; }
+.property-info p { color: #666; line-height: 1.6;
+margin-bottom: 15px;
+}
+.price { font-size: 20px; font-weight: bold;
+margin-bottom: 20px;
+}
+/* GALLERY */
+.gallery-grid { display: grid;
+grid-template-columns:
+    repeat(auto-fit, minmax(250px, 1fr));
+
+gap: 15px;
+}
+.gallery-grid img { width: 100%; height: 300px;
+object-fit: cover;
+
+border-radius: 5px;
+}
+/* CONTACT */
+.contact-section { background: #111; color: white;
+padding: 110px 20px;
+}
+.contact-content { max-width: 900px; margin: auto; text-align: center; }
+.contact-content h2 { font-size: 45px; margin-bottom: 20px; }
+.contact-content p { color: #ccc; margin-bottom: 30px; }
+.contact-buttons { display: flex; justify-content: center; gap: 15px; }
+/* FOOTER */
+footer { background: #000; color: #777;
+text-align: center;
+
+padding: 30px;
+}
+/* MOBILE */
+@media (max-width: 700px) {
+.nav-links {
+    display: none;
+}
+
+.hero-content {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.section-heading h2 {
+    font-size: 34px;
+}
+
+.contact-content h2 {
+    font-size: 34px;
+}
+}
