@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ruhkuri Editor</title>
+
+<style>
+body {
+font-family: Arial, sans-serif;
+background: #f5f5f5;
+padding: 20px;
+max-width: 700px;
+margin: auto;
+}
+
+h1 {
+margin-bottom: 25px;
+}
+
+.box {
+background: white;
+padding: 20px;
+margin-bottom: 20px;
+border-radius: 12px;
+}
+
+label {
+display: block;
+font-weight: bold;
+margin-bottom: 6px;
+}
+
+input,
+textarea {
+width: 100%;
+padding: 12px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 8px;
+box-sizing: border-box;
+font-size: 16px;
+}
+
+textarea {
+min-height: 120px;
+}
+
+button {
+width: 100%;
+padding: 14px;
+background: black;
+color: white;
+border: none;
+border-radius: 8px;
+font-size: 16px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Ruhkuri Website Editor</h1>
+
+<div class="box">
+
+<label>Website Name</label>
+<input id="brand" value="RUHKURI">
+
+<label>Hero Title</label>
+<input id="heroTitle" value="Find your perfect place to stay.">
+
+<label>Hero Description</label>
+<textarea id="heroDescription">Comfortable and beautiful rental property for your next stay.</textarea>
+
+</div>
+
+<div class="box">
+
+<label>Property Name</label>
+<input id="propertyName" value="Ocean View Stay">
+
+<label>Property Description</label>
+<textarea id="propertyDescription">A bright and peaceful room with a relaxing island feel and a great view.</textarea>
+
+<label>Price</label>
+<input id="price" value="120">
+
+</div>
+
+<div class="box">
+
+<label>About Us</label>
+<textarea id="about" style="min-height:250px;">Ruhkuri is more than just a place to stay.</textarea>
+
+</div>
+
+<button>Save Changes</button>
+
+</body>
+</html>
