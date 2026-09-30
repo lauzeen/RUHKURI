@@ -6,7 +6,7 @@ eyebrow: "WELCOME TO RUHKURI",
 title: "Find your perfect place to stay.",
 description: "Comfortable and beautiful rental property for your next stay.",
 button: "View Property",
-image: "images/property1.jpg"
+image: "property1.jpg"
 },
 
 about: {
@@ -28,20 +28,20 @@ period: "per night",
 location: "Ruhkuri Island",
 bedrooms: 1,
 bathrooms: 1,
-image: "images/property1.jpg"
+image: "property1.jpg"
 },
 
 gallery: [
 {
-image: "images/property1.jpg",
+image: "property1.jpg",
 alt: "Property exterior"
 },
 {
-image: "images/property2.jpg",
+image: "property2.jpg",
 alt: "Property interior"
 },
 {
-image: "images/property3.jpg",
+image: "property3.jpg",
 alt: "Property room"
 }
 ],
